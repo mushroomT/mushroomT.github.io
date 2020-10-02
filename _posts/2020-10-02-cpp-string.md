@@ -15,5 +15,6 @@ tags:
     * Convert string to unsigned integer. Parses str interpreting its content as an integral number of the specified base, which is returned as an unsigned long value.
 2. std::stoull
     * Convert string to unsigned long long. Parses str interpreting its content as an integral number of the specified base, which is returned as a value of type unsigned long long.
-
+3. std::stof
+    * Parses string interpreting its content as a floating-point number, which is returned as a value of type float.
 (Ref: https://www.geeksforgeeks.org/stdstoul-stdstoull-c/)
