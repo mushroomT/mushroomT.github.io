@@ -48,3 +48,13 @@ tags:
 * git show <commit_id>: show the git diff of the specific commit
 * git apply xxx.diff: apply a diff file to current branch
 
+# How to apply specify code change to a branch:
+* If there is no commit:
+1. git diff > xxx.diff : to save the diff to a .diff file
+2. In the branch you wanna apply the code change, git apply xxx.diff
+* If there exists a commit you wanna to apply to one branch from other branch
+1. git cherry-pick <commit_id>
+* If there are several commits you wanna apply to a branch from other branch
+1. git rebase <Branch_Name_You_Want_To_rebase_from>
+
+* (If there is conflict, should be resolved as in Section 2.)
